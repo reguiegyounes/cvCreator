@@ -20,3 +20,8 @@
   ```
   Update-Package -reinstall 
   ```
+  
+# Some Views
+![Home](https://github.com/reguiegyounes/cvCreator/blob/master/windows%20of%20program/home.JPG?raw=true)
+![Person](https://github.com/reguiegyounes/cvCreator/blob/master/windows%20of%20program/Person.JPG?raw=true)
+![Settings](https://github.com/reguiegyounes/cvCreator/blob/master/windows%20of%20program/settings%20general.JPG?raw=true)
