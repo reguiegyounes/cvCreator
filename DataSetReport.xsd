@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetReport" targetNamespace="http://tempuri.org/DataSetReport.xsd" xmlns:mstns="http://tempuri.org/DataSetReport.xsd" xmlns="http://tempuri.org/DataSetReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetReport" msprop:Generator_UserDSName="DataSetReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblReport" msprop:Generator_TableClassName="tblReportDataTable" msprop:Generator_TableVarName="tabletblReport" msprop:Generator_TablePropName="tblReport" msprop:Generator_RowDeletingName="tblReportRowDeleting" msprop:Generator_RowChangingName="tblReportRowChanging" msprop:Generator_RowEvHandlerName="tblReportRowChangeEventHandler" msprop:Generator_RowDeletedName="tblReportRowDeleted" msprop:Generator_UserTableName="tblReport" msprop:Generator_RowChangedName="tblReportRowChanged" msprop:Generator_RowEvArgName="tblReportRowChangeEvent" msprop:Generator_RowClassName="tblReportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="section" msprop:Generator_ColumnVarNameInTable="columnsection" msprop:Generator_ColumnPropNameInRow="section" msprop:Generator_ColumnPropNameInTable="sectionColumn" msprop:Generator_UserColumnName="section" type="xs:string" minOccurs="0" />
+              <xs:element name="item" msprop:Generator_ColumnVarNameInTable="columnitem" msprop:Generator_ColumnPropNameInRow="item" msprop:Generator_ColumnPropNameInTable="itemColumn" msprop:Generator_UserColumnName="item" type="xs:string" minOccurs="0" />
+              <xs:element name="detail" msprop:Generator_ColumnVarNameInTable="columndetail" msprop:Generator_ColumnPropNameInRow="detail" msprop:Generator_ColumnPropNameInTable="detailColumn" msprop:Generator_UserColumnName="detail" type="xs:string" minOccurs="0" />
+              <xs:element name="order" msprop:Generator_ColumnVarNameInTable="columnorder" msprop:Generator_ColumnPropNameInRow="order" msprop:Generator_ColumnPropNameInTable="orderColumn" msprop:Generator_UserColumnName="order" type="xs:string" minOccurs="0" />
+              <xs:element name="idSection" msprop:Generator_ColumnVarNameInTable="columnidSection" msprop:Generator_ColumnPropNameInRow="idSection" msprop:Generator_ColumnPropNameInTable="idSectionColumn" msprop:Generator_UserColumnName="idSection" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

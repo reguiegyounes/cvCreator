@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07990DB1-CF67-422F-A6DE-C990215FDCD3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CV_creator</RootNamespace>
+    <AssemblyName>CV creator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo-cv-final-01.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FastReport.Bars, Version=2019.4.9.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\MSAccessDatabase.cs" />
+    <Compile Include="DataSetReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\cCV.cs" />
+    <Compile Include="Entity\cDetails.cs" />
+    <Compile Include="Entity\cItem2.cs" />
+    <Compile Include="Entity\cPerson.cs" />
+    <Compile Include="Entity\cSection.cs" />
+    <Compile Include="fHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHome.Designer.cs">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHomeBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHomeBody.Designer.cs">
+      <DependentUpon>fHomeBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper.cs" />
+    <Compile Include="MyMessageBox\MessageIcon.cs" />
+    <Compile Include="MyMessageBox\MessageOk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMessageBox\MessageOk.Designer.cs">
+      <DependentUpon>MessageOk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMessageBox\MessageYesNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMessageBox\MessageYesNo.Designer.cs">
+      <DependentUpon>MessageYesNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Theme.cs" />
+    <Compile Include="Views\CV generator\fSections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CV generator\fSections.Designer.cs">
+      <DependentUpon>fSections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CV generator\fSelectios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CV generator\fSelectios.Designer.cs">
+      <DependentUpon>fSelectios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CV generator\fSubSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CV generator\fSubSection.Designer.cs">
+      <DependentUpon>fSubSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Persons and CVs\fCv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Persons and CVs\fCv.Designer.cs">
+      <DependentUpon>fCv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Persons and CVs\fPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Persons and CVs\fPersons.Designer.cs">
+      <DependentUpon>fPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\fReport.Designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\fSettingsDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\fSettingsDatabase.Designer.cs">
+      <DependentUpon>fSettingsDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Settings\fSettingsGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Settings\fSettingsGeneral.Designer.cs">
+      <DependentUpon>fSettingsGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Words.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Words.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Words.ar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Words.ar.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="fHome.ar.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHome.resx">
+      <DependentUpon>fHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHomeBody.resx">
+      <DependentUpon>fHomeBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox\MessageOk.ar.resx">
+      <DependentUpon>MessageOk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox\MessageOk.resx">
+      <DependentUpon>MessageOk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox\MessageYesNo.ar.resx">
+      <DependentUpon>MessageYesNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMessageBox\MessageYesNo.resx">
+      <DependentUpon>MessageYesNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\ReportCv.rdlc" />
+    <EmbeddedResource Include="Report\ReportCvAr.rdlc" />
+    <EmbeddedResource Include="Views\CV generator\fSections.ar.resx">
+      <DependentUpon>fSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CV generator\fSections.resx">
+      <DependentUpon>fSections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CV generator\fSelectios.ar.resx">
+      <DependentUpon>fSelectios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CV generator\fSelectios.resx">
+      <DependentUpon>fSelectios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CV generator\fSubSection.ar.resx">
+      <DependentUpon>fSubSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CV generator\fSubSection.resx">
+      <DependentUpon>fSubSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Persons and CVs\fCv.ar.resx">
+      <DependentUpon>fCv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Persons and CVs\fCv.resx">
+      <DependentUpon>fCv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Persons and CVs\fPersons.ar.resx">
+      <DependentUpon>fPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Persons and CVs\fPersons.resx">
+      <DependentUpon>fPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\fSettingsDatabase.ar.resx">
+      <DependentUpon>fSettingsDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\fSettingsDatabase.resx">
+      <DependentUpon>fSettingsDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\fSettingsGeneral.ar.resx">
+      <DependentUpon>fSettingsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Settings\fSettingsGeneral.resx">
+      <DependentUpon>fSettingsGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Words.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Words.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Words.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Words.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSetReport.xsc">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetReport.xss">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full_screen_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore_down_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_button_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\language_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_settings_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\applicant_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\algeria_15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usa_15px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Standart_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restartGreen_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdownRed_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_page_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_to_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft.ReportViewer.Common.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft.ReportViewer.WinForms.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft.SqlServer.Types.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CV creator.resources.dll" />
+    <Content Include="logo-cv-final-01.ico" />
+    <None Include="Resources\logo-cv-final-01.ico" />
+    <None Include="Resources\about_32px.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Added" xml:space="preserve">
+    <value>Added successfully</value>
+  </data>
+  <data name="AddPersonFirst" xml:space="preserve">
+    <value>There are no  persons, add person first</value>
+  </data>
+  <data name="Ar" xml:space="preserve">
+    <value>Arabic</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Backup</value>
+  </data>
+  <data name="BackupSuccess" xml:space="preserve">
+    <value>Backup Success</value>
+  </data>
+  <data name="BrowseForFolder" xml:space="preserve">
+    <value>browse for folder</value>
+  </data>
+  <data name="ChangeDirectory" xml:space="preserve">
+    <value>Change directory</value>
+  </data>
+  <data name="DatabaseCreated" xml:space="preserve">
+    <value>Database created successfully</value>
+  </data>
+  <data name="DateRegistration" xml:space="preserve">
+    <value>date of registration</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeletePerson" xml:space="preserve">
+    <value>Delete person</value>
+  </data>
+  <data name="DeleteQuestion" xml:space="preserve">
+    <value>Are you sure you want to delete it?</value>
+  </data>
+  <data name="DeleteSection" xml:space="preserve">
+    <value>Delete Section</value>
+  </data>
+  <data name="DeleteSelection" xml:space="preserve">
+    <value>Delete selection</value>
+  </data>
+  <data name="DeleteSub_section" xml:space="preserve">
+    <value>Delete sub-section</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EmptyTable" xml:space="preserve">
+    <value>The table is empty, add rows first</value>
+  </data>
+  <data name="En" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorClosingConnection" xml:space="preserve">
+    <value>Error closing connection</value>
+  </data>
+  <data name="ErrorDelete" xml:space="preserve">
+    <value>An error occurred during deletion</value>
+  </data>
+  <data name="ErrorFillTextBox" xml:space="preserve">
+    <value>There is an error in filling elements</value>
+  </data>
+  <data name="ErrorOpenConnection" xml:space="preserve">
+    <value>Error opening connect to the database</value>
+  </data>
+  <data name="ErrorPrint" xml:space="preserve">
+    <value>Error print</value>
+  </data>
+  <data name="ExportSuccessfully" xml:space="preserve">
+    <value>The export completed successfully</value>
+  </data>
+  <data name="Fr" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="FullNameAr" xml:space="preserve">
+    <value>Full Name (Arabic)</value>
+  </data>
+  <data name="FullNameLatin" xml:space="preserve">
+    <value>Full Name (Latin)</value>
+  </data>
+  <data name="GoSections" xml:space="preserve">
+    <value>Go to sections</value>
+  </data>
+  <data name="GoSelectios" xml:space="preserve">
+    <value>Go to selections</value>
+  </data>
+  <data name="GoSub_sections" xml:space="preserve">
+    <value>Go to sub-sections</value>
+  </data>
+  <data name="idSection" xml:space="preserve">
+    <value>id</value>
+  </data>
+  <data name="ImageNamePerson" xml:space="preserve">
+    <value>File name image</value>
+  </data>
+  <data name="InstallEngine" xml:space="preserve">
+    <value>Install Microsoft Access Database Engine 2010</value>
+  </data>
+  <data name="KeyNotFound" xml:space="preserve">
+    <value>Key not found</value>
+  </data>
+  <data name="Modified" xml:space="preserve">
+    <value>Modified successfully</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="Order" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="QuestionChangeLanguage" xml:space="preserve">
+    <value>The program will be restarted to save the changes</value>
+  </data>
+  <data name="Repeat" xml:space="preserve">
+    <value>Repeat</value>
+  </data>
+  <data name="RestoreDatabase" xml:space="preserve">
+    <value>Database restore</value>
+  </data>
+  <data name="RestoreSuccess" xml:space="preserve">
+    <value>database restore success</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="Selection" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="Sub_section" xml:space="preserve">
+    <value>Sub_section</value>
+  </data>
+</root>

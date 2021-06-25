@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CV_creator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IsArabic" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en</Value>
+    </Setting>
+    <Setting Name="OriginalScreenWidth" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1440</Value>
+    </Setting>
+    <Setting Name="OriginalFontSize" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="ResizeForms" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IndexLastPerson" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Notafication" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DirectorySaveCv" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FolderNameCv" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Documents CVs</Value>
+    </Setting>
+    <Setting Name="DirectorySaveBackupCv" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FolderNameBackupCv" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Backup CV</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
