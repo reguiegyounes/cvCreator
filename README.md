@@ -1,4 +1,4 @@
-# CV Creator
+# CV Creator (C# .Net Framework)
 
 ## Features
 - Create database automatically if not existe
